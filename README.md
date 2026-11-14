@@ -24,10 +24,10 @@ I am a **Senior Backend & Distributed Systems Engineer** with ~4 years of profes
 
 ---
 
-### 🌟 Featured Public Projects & Deep-Dives
+### 🌟 Featured Public Projects & Architecture
 
-- 📌 **[notification-service-interview](https://github.com/ashish-ranjan-jobs/notification-service-interview)**: Production Deep-Dives & 10 Senior Engineering Interview Answers on High-Throughput Notification Systems, Concurrency, Kafka, Redis, and Resilience.
-- 📌 **[OmniAgent-](https://github.com/ashish-ranjan-jobs/OmniAgent-)**: Autonomous Agentic AI system featuring multi-step tool execution, grounded retrieval, and supervisory self-healing.
+- 📌 **[WalletDesign](https://github.com/ashish-ranjan-jobs/WalletDesign)**: Production Fintech Digital Wallet & Payment Transfer Service in Java 21 & Spring Boot 3.3 featuring deadlock-free pessimistic locking (`PESSIMISTIC_WRITE` ordered by ID), transaction audit ledger, and domain invariants.
+- 📌 **[OmniAgent](https://github.com/ashish-ranjan-jobs/OmniAgent)**: Autonomous multi-agent RAG platform with LangGraph cyclical reflection, hybrid retrieval (pgvector + BM25 + RRF fusion + cross-encoder rerank), and Server-Sent Events (SSE) token streaming.
 
 ---
 
