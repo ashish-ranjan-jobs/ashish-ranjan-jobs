@@ -4,9 +4,10 @@
 
 ### Senior Software Engineer • High-Throughput Distributed Systems • Agentic AI
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ashish-ranjan)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ashish-ranjan-jobs)
 [![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/ar_u/)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:arju.jobs@gmail.com)
+[![Location](https://img.shields.io/badge/Location-India-blue?style=for-the-badge&logo=googlemaps&logoColor=white)](https://maps.google.com)
 
 </div>
 
@@ -23,7 +24,28 @@ I am a **Senior Backend & Distributed Systems Engineer** with ~4 years of profes
 
 ---
 
-### 🛠️ Technical Stack & Expertise
+### 🌟 Featured Public Projects & Deep-Dives
+
+- 📌 **[notification-service-interview](https://github.com/ashish-ranjan-jobs/notification-service-interview)**: Production Deep-Dives & 10 Senior Engineering Interview Answers on High-Throughput Notification Systems, Concurrency, Kafka, Redis, and Resilience.
+- 📌 **[OmniAgent-](https://github.com/ashish-ranjan-jobs/OmniAgent-)**: Autonomous Agentic AI system featuring multi-step tool execution, grounded retrieval, and supervisory self-healing.
+
+---
+
+### 🛠️ Technical Stack & Skills
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Java_21-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
+  <img src="https://img.shields.io/badge/Spring_Boot_3-6DB33F?style=flat-square&logo=springboot&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python_3.12-3776AB?style=flat-square&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
+  <img src="https://img.shields.io/badge/Apache_Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white" />
+  <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" />
+  <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" />
+</p>
 
 | Domain | Technologies |
 |---|---|
@@ -47,14 +69,13 @@ I am a **Senior Backend & Distributed Systems Engineer** with ~4 years of profes
 ### 📊 GitHub Activity & Highlights
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ashish-ranjan-jobs&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Ashish's GitHub Stats" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ashish-ranjan-jobs&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" width="48%" />
+  <img src="https://streak-stats.demolab.com?user=ashish-ranjan-jobs&theme=tokyonight&hide_border=true&border_radius=8" alt="Ashish's GitHub Streak" />
 </div>
 
 ---
 
 ### 📫 Connect with Me
 
-- 💼 **LinkedIn**: [linkedin.com/in/ashish-ranjan](https://linkedin.com/in/ashish-ranjan)
+- 💼 **LinkedIn**: [linkedin.com/in/ashish-ranjan-jobs](https://www.linkedin.com/in/ashish-ranjan-jobs)
 - 🧠 **LeetCode**: [ar_u](https://leetcode.com/u/ar_u/)
 - ✉️ **Email**: [arju.jobs@gmail.com](mailto:arju.jobs@gmail.com)
