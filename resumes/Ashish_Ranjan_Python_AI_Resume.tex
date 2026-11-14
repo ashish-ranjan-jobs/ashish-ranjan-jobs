@@ -1,0 +1,159 @@
+%-------------------------
+% Resume in LaTeX
+% Author : Ashish Ranjan
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10.5pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins for strict 1-page fit
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1.5pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, label=\textbullet]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Ashish Ranjan} \\ \vspace{2pt}
+    \small +91-8986410317 $|$ \href{mailto:arju.jobs@gmail.com}{\underline{arju.jobs@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/ashish-ranjan-jobs}{\underline{linkedin.com/in/ashish-ranjan-jobs}} $|$
+    \href{https://github.com/ashish-ranjan-jobs}{\underline{github.com/ashish-ranjan-jobs}} $|$
+    \href{https://leetcode.com/u/ar_u}{\underline{leetcode.com/u/ar\_u}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Jadavpur University}{Kolkata, India}
+      {Bachelor of Engineering in Computer Science \& Engineering (GPA: 8.09 / 10.0)}{2018 -- 2022}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Airtel International}{Gurgaon, India}
+      {Senior Software Engineer (Distributed Systems \& Backend Platform)}{April 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Architected transaction routing pipelines for the \textbf{Airtel Payment Controller (APC)}, processing \textbf{300+\text{~}TPS} across multi-region banking switches by decoupling traffic via Apache Kafka and implementing idempotent request handlers.}
+        \resumeItem{Optimized core middleware notification services, diagnosing thread contention and native memory leaks to reduce per-pod footprint from \textbf{8\text{~}GB to 4\text{~}GB} while scaling outbound gateway dispatchers to reliably sustain \textbf{200+\text{~}TPS}.}
+        \resumeItem{Engineered distributed task processing workflows using \textbf{Redis (RQueue / Redlock)} and state machine engines, guaranteeing high delivery reliability for critical financial webhooks, OTP dispatch, and payment callback events.}
+        \resumeItem{Built high-volume batch data reconciliation pipelines for End-of-Day (EOD) settlements, processing multi-million transaction datasets with parallel chunking, partition pruning, and resilient retry mechanics in PostgreSQL.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Dolcera}{Hyderabad, India}
+      {Software Developer (AI \& Backend Platform)}{October 2022 -- March 2025}
+      \resumeItemListStart
+        \resumeItem{Architected core backend microservices for the \textbf{IP Author Generative AI SaaS platform} from scratch using \textbf{Python (FastAPI) and Celery}, processing asynchronous patent document ingestion via Apache Kafka.}
+        \resumeItem{Built production Retrieval-Augmented Generation (RAG) pipelines for patent prior-art discovery, indexing \textbf{500K+\text{~}legal claims} using \textbf{pgvector} and semantic embeddings to boost context retrieval accuracy by \textbf{35\%}.}
+        \resumeItem{Developed low-latency LLM drafting workflows integrating OpenAI \& Claude APIs with Server-Sent Events (SSE) for real-time token streaming and \textbf{Redis semantic caching}, reducing API latency by \textbf{40\%} and token costs by \textbf{28\%}.}
+        \resumeItem{Implemented structured output enforcement and schema guardrails using \textbf{Pydantic} to eliminate JSON hallucinations; deployed containerized services on \textbf{AWS (EKS, EC2, S3)} maintaining \textbf{99.9\% uptime}.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Featured Project}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{OmniAgent -- Autonomous Multi-Agent RAG Platform} $|$ \emph{Python 3.12, FastAPI, LangGraph, pgvector, Docker}}{}
+          \resumeItemListStart
+            \resumeItem{Architected a stateful multi-agent system in \textbf{LangGraph} orchestrating specialized nodes (Query Planner, Research Agent, Fact-Checker, Synthesizer) with cyclical reflection loops for complex technical research.}
+            \resumeItem{Implemented an advanced hybrid search pipeline combining dense vector embeddings (\textbf{pgvector} + BGE) and sparse keyword retrieval (\textbf{BM25}) fused via Reciprocal Rank Fusion (RRF), coupled with cross-encoder re-ranking to cut hallucination rates by \textbf{42\%}.}
+            \resumeItem{Integrated local open-source LLM inference using vLLM/Ollama with continuous batching and automated failover routing to commercial LLM APIs, exposing asynchronous token streaming via Server-Sent Events (SSE).}
+            \resumeItem{Constructed an automated evaluation suite measuring the \textbf{RAG Triad} (Context Relevance, Groundedness, Answer Faithfulness) and containerized the architecture using Docker Compose.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}: Python (3.11+, AsyncIO), Java 17, SQL, Bash, C++ \\
+     \textbf{Generative AI \& Agentic Stack}: Agentic AI, LangGraph, Multi-Agent Systems, RAG Pipelines, LlamaIndex, Vector DBs (pgvector, Pinecone), Hybrid Search (Dense + BM25 Sparse), Reciprocal Rank Fusion (RRF), Cross-Encoder Re-Ranking, Ollama, vLLM, Prompt Engineering, Semantic Caching, Guardrails \& Evals \\
+     \textbf{Backend \& Distributed Systems}: FastAPI, AsyncIO, Celery, Spring Boot, RESTful APIs, Apache Kafka, Redis (Task Queues, Redlock, Caching), PostgreSQL, MySQL, Microservices Architecture \\
+     \textbf{Cloud, DevOps \& Tools}: AWS (EKS, EC2, S3, RDS), Docker, Docker Compose, Kubernetes, CI/CD, Git, Linux/Unix, Prometheus, Grafana \\
+     \textbf{Architecture \& Concepts}: Low-Level Design (LLD), High-Level Design (HLD), Clean Architecture, Idempotency, Transactional Outbox
+    }}
+ \end{itemize}
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements \& Competitive Programming}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{WBJEE State Rank}: Achieved \textbf{AIR 1160 (99.2 percentile)} among 150,000+ candidates statewide. \\
+     \textbf{Competitive Programming}: Solved \textbf{1040+\text{~}problems on LeetCode} (Peak Rating: \textbf{1877}) and \textbf{590+\text{~}problems on Codeforces}, demonstrating mastery in data structures, algorithms, and computational complexity.
+    }}
+ \end{itemize}
+
+\end{document}

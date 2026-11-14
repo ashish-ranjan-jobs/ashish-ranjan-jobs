@@ -1,0 +1,158 @@
+%-------------------------
+% Resume in LaTeX
+% Author : Ashish Ranjan
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10.5pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins for strict 1-page fit
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1.5pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, label=\textbullet]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Ashish Ranjan} \\ \vspace{2pt}
+    \small +91-7542971093 $|$ \href{mailto:arju1936@gmail.com}{\underline{arju1936@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/ashish-ranjan-jobs}{\underline{linkedin.com/in/ashish-ranjan-jobs}} $|$
+    \href{https://github.com/ashish-ranjan-jobs}{\underline{github.com/ashish-ranjan-jobs}} $|$
+    \href{https://leetcode.com/u/ar_u}{\underline{leetcode.com/u/ar\_u}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Jadavpur University}{Kolkata, India}
+      {Bachelor of Engineering in Computer Science \& Engineering (GPA: 8.09 / 10.0)}{2018 -- 2022}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Airtel International}{Gurgaon, India}
+      {Software Engineer (Middleware Team -- Airtel Africa Payment Bank)}{April 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Engineered transaction routing within the \textbf{Airtel Payment Controller (APC)}, sustaining \textbf{300+\text{~}TPS} across multi-region banking switches by decoupling inbound traffic with Apache Kafka and implementing idempotent request handlers.}
+        \resumeItem{Diagnosed and eliminated a native heap JVM memory leak, reducing per-pod footprint from \textbf{8\text{~}GB to 4\text{~}GB}; integrated Kamex SMS gateway to scale outbound SMPP traffic, enabling each pod to sustain \textbf{200+\text{~}TPS}.}
+        \resumeItem{Implemented transaction lifecycle management using \textbf{Spring State Machine} and \textbf{FreeMarker} for dynamic template rendering; built retry and dead-letter fallback workflows using \textbf{Redis (RQueue)} for high-reliability OTP/webhook delivery.}
+        \resumeItem{Developed End-of-Day (EOD) financial batch reconciliation and merchant settlements using \textbf{Spring Batch} with partitioned chunk processing and skip listeners to reliably process large datasets with stable memory profiles.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Dolcera}{Hyderabad, India}
+      {Software Developer (Backend Systems \& AI Platform)}{October 2022 -- March 2025}
+      \resumeItemListStart
+        \resumeItem{Designed and developed backend microservices for the \textbf{IP Author SaaS platform} from scratch using \textbf{Spring Boot and FastAPI}, utilizing Kafka event streams for asynchronous patent document ingestion and background drafting tasks.}
+        \resumeItem{Built scalable semantic search pipelines for the Prior Art module, indexing \textbf{500K+\text{~}legal claims} using \textbf{pgvector} and semantic embeddings to boost context similarity retrieval accuracy by \textbf{35\%}.}
+        \resumeItem{Developed LLM drafting workflows integrating OpenAI/Claude APIs with Server-Sent Events (SSE) and \textbf{Redis caching}, reducing repeated LLM API roundtrips and optimizing query latency.}
+        \resumeItem{Containerized microservices with Docker and deployed on \textbf{AWS EKS}; built CI/CD deployment automation with Prometheus/Grafana monitoring, maintaining \textbf{99.9\% service uptime}.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Featured Project}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{WalletDesign -- Production Digital Wallet Engine} $|$ \emph{Java 21, Spring Boot 3.3, JPA, PostgreSQL, Postman}}{}
+          \resumeItemListStart
+            \resumeItem{Architected a high-concurrency fund transfer service enforcing deadlock-free \textbf{PESSIMISTIC\_WRITE} locks ordered by ascending wallet ID to safely handle concurrent bidirectional transfers ($A \leftrightarrow B$).}
+            \resumeItem{Enforced core financial domain invariants (non-negative balances, balance caps, debit guards) and maintained an immutable, transactional \textbf{TxnHistory} audit ledger for all transaction attempts.}
+            \resumeItem{Engineered clean RESTful APIs with global exception handling, bean validation, and end-to-end Postman integration tests.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}: Java (8, 17, 21), Python 3.12, SQL, C++, Bash \\
+     \textbf{Backend \& Frameworks}: Spring Boot 3.x, Spring Batch, Spring Data JPA, Spring State Machine, FastAPI, Hibernate, RESTful APIs, gRPC, FreeMarker \\
+     \textbf{Distributed Systems \& Data}: Apache Kafka (Partitioning, DLQ), Redis (RQueue, Redlock, Caching), PostgreSQL, MySQL, pgvector, Microservices, Concurrency \\
+     \textbf{Cloud \& DevOps}: AWS (EKS, EC2, S3, RDS), Docker, Kubernetes, CI/CD, Git, Linux/Unix, Prometheus, Grafana, JVM Profiling \\
+     \textbf{Architecture \& Concepts}: Low-Level Design (LLD), High-Level Design (HLD), Clean Architecture, Idempotency, Transactional Outbox
+    }}
+ \end{itemize}
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements \& Competitive Programming}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{WBJEE State Rank}: Achieved \textbf{AIR 1160 (99.2 percentile)} among 150,000+ candidates statewide. \\
+     \textbf{Competitive Programming}: Solved \textbf{1040+\text{~}problems on LeetCode} (Peak Rating: \textbf{1877}) and \textbf{590+\text{~}problems on Codeforces}, demonstrating mastery in data structures, algorithms, and computational complexity.
+    }}
+ \end{itemize}
+
+\end{document}
